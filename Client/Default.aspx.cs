@@ -22,7 +22,7 @@ public partial class Client_Default : System.Web.UI.Page
             cmd.CommandText = "select cnt from cnt_down1(@ID,'A')";
             cmd.Parameters.Add("@ID", SqlDbType.VarChar).Value = Convert.ToString(Session["ID"]);
             cmd.Connection = con;
-            Label2.Text = Convert.ToString(cmd.ExecuteScalar());
+          //  Label2.Text = Convert.ToString(cmd.ExecuteScalar());
         }
         {
             SqlCommand cmd = new SqlCommand();

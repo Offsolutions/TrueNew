@@ -86,7 +86,8 @@
                 <li class="nav-item"><a href="default.aspx" class="nav-link"><i class="md md-home"></i>&nbsp;Home</a> </li>
                 <li class="nav-item"><a href="members.aspx" class="nav-link"><i class="fa fa-users"></i>&nbsp;Members</a> </li>
                 <li class="nav-item"><a href="bank.aspx" class="nav-link"><i class="fa fa-files-o"></i>&nbsp;Report</a> </li>
-                <li class="nav-item"><a href="binary.aspx" class="nav-link"><i class="fa fa-files-o"></i>&nbsp;Binary</a> </li>
+                <li class="nav-item"><a href="
+                    .aspx" class="nav-link"><i class="fa fa-files-o"></i>&nbsp;Binary</a> </li>
                 <li class="nav-item"><a href="transpin.aspx" class="nav-link"><i class="md md-credit-card"></i>&nbsp;<span>Pin Transfer</span></a></li>
                 <li class="nav-item"><a href="returnpin.aspx" class="nav-link"><i class="md md-account-balance-wallet"></i>&nbsp;<span>Pin Return</span></a></li>
             <%--    <li class="nav-item"><a href="pwdchg.aspx" class="nav-link"><i class="fa fa-link"></i>&nbsp;<span>Change Password</span></a></li>--%>

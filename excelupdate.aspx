@@ -18,6 +18,18 @@
                             File
                     <asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control" />
                         </div>
+                        <asp:DropDownList ID="DropDownList1" runat="server">
+                            <asp:ListItem>2018-06-30</asp:ListItem>
+                            <asp:ListItem>2018-06-30</asp:ListItem>
+                            <asp:ListItem>2018-06-30</asp:ListItem>
+                            <asp:ListItem>2018-06-30</asp:ListItem>
+                            <asp:ListItem>2018-06-30</asp:ListItem>
+                            <asp:ListItem>2018-06-30</asp:ListItem>
+                            <asp:ListItem>2018-06-30</asp:ListItem>
+                            <asp:ListItem>2018-06-30</asp:ListItem>
+                            <asp:ListItem>2018-06-30</asp:ListItem>
+                            <asp:ListItem>2018-06-30</asp:ListItem>
+                        </asp:DropDownList>
                         <asp:Button ID="btnsubmit" runat="server" Text="Submit" OnClick="btnsubmit_Click" />
                         <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
                     </div>

@@ -11,6 +11,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
         con.ConnectionString = ConfigurationManager.ConnectionStrings["cn"].ConnectionString;
         con.Open();
         SqlCommand cmd1 = new SqlCommand();
+        
         cmd1.CommandText = "select count(*) from wallet where stat='B' and convert(varchar,date_entry,106)=convert(varchar,@DATE_ENTRY,106)";
         cmd1.Parameters.Add("@DATE_ENTRY", SqlDbType.DateTime).Value = Convert.ToDateTime(DateTime.Now.AddHours(12).AddMinutes(30));
         DateTime ddtime = Convert.ToDateTime(DateTime.Now.AddHours(12).AddMinutes(30));
@@ -19,6 +20,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "BINARYS";
+            
             cmd.Parameters.Add("@DATE_ENTRY", SqlDbType.DateTime).Value = Convert.ToDateTime(DateTime.Now.AddHours(12).AddMinutes(30));
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Connection = con;
