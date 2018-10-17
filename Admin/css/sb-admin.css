@@ -147,7 +147,7 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
 }
 
 .sidebar .nav-item .nav-link span {
-  font-size: 0.65rem;
+  
   display: block;
 }
 
@@ -193,7 +193,7 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
     width: 225px;
   }
   .sidebar .nav-item .nav-link span {
-    font-size: 1rem;
+  
     display: inline;
   }
   .sidebar .nav-item .dropdown-menu {
