@@ -2,20 +2,21 @@
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<style type="text/css">
+    <style type="text/css">
     .form-group 
     {
         padding: 50px 0px 0px 0px;
     }
  </style> 
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
 	  <div>
 		<h2 class="content-header-title">Personal Profile</h2>
       </div>
 
-      <br>
-    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+     <br/>
+   <%-- <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>--%>
 <div class="row">
 <fieldset>
   <legend>Profile</legend>

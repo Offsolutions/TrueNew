@@ -44,13 +44,13 @@ public partial class Client_Default2 : System.Web.UI.Page
     }
     public void Tree(string Sr)
     {
-        Image1.ImageUrl = "../img/user_black.png";
-        Image3.ImageUrl = "../img/user_black.png";
-        Image6.ImageUrl = "../img/user_black.png";
-        Image9.ImageUrl = "../img/user_black.png";
-        Image12.ImageUrl = "../img/user_black.png";
-        Image15.ImageUrl = "../img/user_black.png";
-        Image18.ImageUrl = "../img/user_black.png";
+        Image1.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
+        Image3.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
+        Image6.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
+        Image9.ImageUrl = "../dashboard/assets/udio_web/assets/../dashboard/assets/udio_web/assets/img/user_black.png";
+        Image12.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
+        Image15.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
+        Image18.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
         SqlConnection con = new SqlConnection();
         con.ConnectionString = ConfigurationManager.ConnectionStrings["cn"].ConnectionString;
         con.Open();
@@ -117,15 +117,15 @@ public partial class Client_Default2 : System.Web.UI.Page
             cmd.Connection = con;
             if (Convert.ToInt64(cmd.ExecuteScalar()) == 0)
             {
-                Image1.ImageUrl = "../img/user_red.png";
+                Image1.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_red.png";
             }
             if (Convert.ToInt64(cmd.ExecuteScalar()) == 1100)
             {
-                Image1.ImageUrl = "../img/user_green.png";
+                Image1.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_green.png";
             }
             if (Convert.ToInt64(cmd.ExecuteScalar()) == 5100)
             {
-                Image1.ImageUrl = "../img/user_blue.png";
+                Image1.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_blue.png";
             }
             SqlCommand cmd5 = new SqlCommand();
             cmd5.CommandText = "select count(*) from wallet where id=@ID and stat='F'";
@@ -133,7 +133,7 @@ public partial class Client_Default2 : System.Web.UI.Page
             cmd5.Connection = con;
             if (Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
             {
-                Image1.ImageUrl = "../img/user_gold.png";
+                Image1.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_gold.png";
             }
         }
         {
@@ -159,15 +159,15 @@ public partial class Client_Default2 : System.Web.UI.Page
                 cmd11.Connection = con;
                 if (Convert.ToInt64(cmd11.ExecuteScalar()) == 0)
                 {
-                    Image3.ImageUrl = "../img/user_red.png";
+                    Image3.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_red.png";
                 }
                 if (Convert.ToInt64(cmd11.ExecuteScalar()) == 1100)
                 {
-                    Image3.ImageUrl = "../img/user_green.png";
+                    Image3.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_green.png";
                 }
                 if (Convert.ToInt64(cmd11.ExecuteScalar()) == 5100)
                 {
-                    Image3.ImageUrl = "../img/user_blue.png";
+                    Image3.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_blue.png";
                 }
                 SqlCommand cmd5 = new SqlCommand();
                 cmd5.CommandText = "select count(*) from wallet where id=(select id from member_creation where upleg=@ID and side='Left') and stat='F'";
@@ -175,7 +175,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                 cmd5.Connection = con;
                 if (Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
                 {
-                    Image3.ImageUrl = "../img/user_gold.png";
+                    Image3.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_gold.png";
                 }
                 SqlCommand cmd12 = new SqlCommand();
                 cmd12.CommandText = "select count(*) from member_creation where id=(select id from member_creation where upleg=@ID and side='Left')";
@@ -183,7 +183,8 @@ public partial class Client_Default2 : System.Web.UI.Page
                 cmd12.Connection = con;
                 if (Convert.ToInt64(cmd12.ExecuteScalar()) == 0)
                 {
-                    Image3.ImageUrl = "../img/user_black.png";
+                   // Image3.ImageUrl = "../img/user_black.png";
+                    Image3.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
                 }
             }
         }
@@ -210,15 +211,15 @@ public partial class Client_Default2 : System.Web.UI.Page
                 cmd11.Connection = con;
                 if (Convert.ToInt64(cmd11.ExecuteScalar()) == 0)
                 {
-                    Image6.ImageUrl = "../img/user_red.png";
+                    Image6.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_red.png";
                 }
                 if (Convert.ToInt64(cmd11.ExecuteScalar()) == 1100)
                 {
-                    Image6.ImageUrl = "../img/user_green.png";
+                    Image6.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_green.png";
                 }
                 if (Convert.ToInt64(cmd11.ExecuteScalar()) == 5100)
                 {
-                    Image6.ImageUrl = "../img/user_blue.png";
+                    Image6.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_blue.png";
                 }
                 SqlCommand cmd5 = new SqlCommand();
                 cmd5.CommandText = "select count(*) from wallet where id=(select id from member_creation where upleg=@ID and side='Right') and stat='F'";
@@ -226,7 +227,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                 cmd5.Connection = con;
                 if (Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
                 {
-                    Image6.ImageUrl = "../img/user_gold.png";
+                    Image6.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_gold.png";
                 }
                 SqlCommand cmd12 = new SqlCommand();
                 cmd12.CommandText = "select count(*) from member_creation where id=(select id from member_creation where upleg=@ID and side='Right')";
@@ -234,7 +235,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                 cmd12.Connection = con;
                 if (Convert.ToInt64(cmd12.ExecuteScalar()) == 0)
                 {
-                    Image6.ImageUrl = "../img/user_black.png";
+                    Image6.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
                 }
             }
         }
@@ -262,15 +263,15 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd11.Connection = con;
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 0)
                     {
-                        Image9.ImageUrl = "../img/user_red.png";
+                        Image9.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_red.png";
                     }
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 1100)
                     {
-                        Image9.ImageUrl = "../img/user_green.png";
+                        Image9.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_green.png";
                     }
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 5100)
                     {
-                        Image9.ImageUrl = "../img/user_blue.png";
+                        Image9.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_blue.png";
                     }
                     SqlCommand cmd5 = new SqlCommand();
                     cmd5.CommandText = "select count(*) from wallet where id=(select id from member_creation where upleg in (select id from member_creation where upleg=@ID and side='Left') and side='Left') and stat='F'";
@@ -278,7 +279,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd5.Connection = con;
                     if (Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
                     {
-                        Image9.ImageUrl = "../img/user_gold.png";
+                        Image9.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_gold.png";
                     }
                     SqlCommand cmd12 = new SqlCommand();
                     cmd12.CommandText = "select count(*) from member_creation where id=(select id from member_creation where upleg in (select id from member_creation where upleg=@ID and side='Left') and side='Left')";
@@ -286,7 +287,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd12.Connection = con;
                     if (Convert.ToInt64(cmd12.ExecuteScalar()) == 0)
                     {
-                        Image9.ImageUrl = "../img/user_black.png";
+                        Image9.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
                     }
                 }
             }
@@ -313,15 +314,15 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd11.Connection = con;
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 0)
                     {
-                        Image12.ImageUrl = "../img/user_red.png";
+                        Image12.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_red.png";
                     }
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 1100)
                     {
-                        Image12.ImageUrl = "../img/user_green.png";
+                        Image12.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_green.png";
                     }
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 5100)
                     {
-                        Image12.ImageUrl = "../img/user_blue.png";
+                        Image12.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_blue.png";
                     }
                     SqlCommand cmd5 = new SqlCommand();
                     cmd5.CommandText = "select count(*) from wallet where id=(select id from member_creation where upleg in (select id from member_creation where upleg=@ID and side='Left') and side='Right') and stat='F'";
@@ -329,7 +330,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd5.Connection = con;
                     if (Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
                     {
-                        Image12.ImageUrl = "../img/user_gold.png";
+                        Image12.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_gold.png";
                     }
                     SqlCommand cmd12 = new SqlCommand();
                     cmd12.CommandText = "select count(*) from member_creation where id=(select id from member_creation where upleg in (select id from member_creation where upleg=@ID and side='Left') and side='Right')";
@@ -337,7 +338,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd12.Connection = con;
                     if (Convert.ToInt64(cmd12.ExecuteScalar()) == 0)
                     {
-                        Image12.ImageUrl = "../img/user_black.png";
+                        Image12.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
                     }
                 }
             }
@@ -366,15 +367,15 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd11.Connection = con;
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 0)
                     {
-                        Image15.ImageUrl = "../img/user_red.png";
+                        Image15.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_red.png";
                     }
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 1100)
                     {
-                        Image15.ImageUrl = "../img/user_green.png";
+                        Image15.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_green.png";
                     }
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 5100)
                     {
-                        Image15.ImageUrl = "../img/user_blue.png";
+                        Image15.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_blue.png";
                     }
                     SqlCommand cmd5 = new SqlCommand();
                     cmd5.CommandText = "select count(*) from wallet where id=(select id from member_creation where upleg in (select id from member_creation where upleg=@ID and side='Right') and side='Left') and stat='F'";
@@ -382,7 +383,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd5.Connection = con;
                     if (Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
                     {
-                        Image15.ImageUrl = "../img/user_gold.png";
+                        Image15.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_gold.png";
                     }
                     SqlCommand cmd12 = new SqlCommand();
                     cmd12.CommandText = "select count(*) from member_creation where id=(select id from member_creation where upleg in (select id from member_creation where upleg=@ID and side='Right') and side='Left')";
@@ -390,7 +391,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd12.Connection = con;
                     if (Convert.ToInt64(cmd12.ExecuteScalar()) == 0)
                     {
-                        Image15.ImageUrl = "../img/user_black.png";
+                        Image15.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
                     }
                 }
             }
@@ -417,15 +418,15 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd11.Connection = con;
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 0)
                     {
-                        Image18.ImageUrl = "../img/user_red.png";
+                        Image18.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_red.png";
                     }
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 1100)
                     {
-                        Image18.ImageUrl = "../img/user_green.png";
+                        Image18.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_green.png";
                     }
                     if (Convert.ToInt64(cmd11.ExecuteScalar()) == 5100)
                     {
-                        Image18.ImageUrl = "../img/user_blue.png";
+                        Image18.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_blue.png";
                     }
                     SqlCommand cmd5 = new SqlCommand();
                     cmd5.CommandText = "select count(*) from wallet where id=(select id from member_creation where upleg in (select id from member_creation where upleg=@ID and side='Right') and side='Right') and stat='F'";
@@ -433,7 +434,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd5.Connection = con;
                     if (Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
                     {
-                        Image18.ImageUrl = "../img/user_gold.png";
+                        Image18.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_gold.png";
                     }
                     SqlCommand cmd12 = new SqlCommand();
                     cmd12.CommandText = "select count(*) from member_creation where id=(select id from member_creation where upleg in (select id from member_creation where upleg=@ID and side='Right') and side='Right')";
@@ -441,7 +442,7 @@ public partial class Client_Default2 : System.Web.UI.Page
                     cmd12.Connection = con;
                     if (Convert.ToInt64(cmd12.ExecuteScalar()) == 0)
                     {
-                        Image18.ImageUrl = "../img/user_black.png";
+                        Image18.ImageUrl = "../dashboard/assets/udio_web/assets/img/user_black.png";
                     }
                 }
             }
