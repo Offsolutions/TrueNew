@@ -1,0 +1,165 @@
+/*# New */
+body{
+	background:url(../../iframe_all_bankings/img/bg.html)
+	}
+	.cardtypelogo-all-logos {
+	background-attachment: scroll !important;
+    background-clip: border-box !important;
+    background-color: #fff !important;
+    background-image: url("../img/visa_icon.png") !important;
+    background-origin: padding-box !important;
+    background-position: 100% center !important;
+    background-repeat: no-repeat !important;
+    /*background-size: 43% auto;*/
+    float: right;
+    font-size: 14px;
+	border:none;
+	border-bottom:solid 1px #c2c2c2;
+    margin-top: 10px;
+	border-radius:0px;
+    padding-left:0px;
+	
+} 
+.show-pass {
+	background-attachment: scroll !important;
+    background-clip: border-box !important;
+    background-color: #fff !important;
+    background-image: url("../img/hide_icon.png") !important;
+    background-origin: padding-box !important;
+    background-position: 100% center !important;
+    background-repeat: no-repeat !important;
+    /*background-size: 43% auto;*/
+    float: right;
+    font-size: 14px;
+	border:none;
+	border-bottom:solid 1px #c2c2c2;
+    margin-top:2px;
+	border-radius:0px;
+    padding-left:0px;
+	
+} 
+
+	.infome {
+	
+	background: #FFF url("../img/info.png") no-repeat scroll 95% center !important;
+	background-repeat: no-repeat;
+	background-position: 100% center !important;
+	padding-left: 0px;
+	width:28;
+	font-size:14px;
+	/* font-family:"Helvetica Neue"; */
+	float:right;}
+
+
+	.cardtypelogo-visa {
+	
+	background: #FFF url("../img/1.png") no-repeat scroll 95% center !important;
+	background-repeat: no-repeat;
+	background-position:12px;
+	margin-top: 10px;
+	padding-left: 20px;
+	width:100;
+	font-size:14px;
+	/* font-family:"Helvetica Neue"; */
+	float:right;
+	
+}
+
+	.cardtypelogo-mc {
+	
+	background: #FFF url("../img/2.png") no-repeat scroll 95% center !important;
+	background-repeat: no-repeat;
+	background-position:12px;
+	margin-top: 10px;
+	padding-left: 20px;
+	width:100;
+	font-size:14px;
+	/* font-family:"Helvetica Neue"; */
+	float:right;
+}
+
+	.cardtypelogo-maestro {
+	
+	background: #FFF url("../img/3.png") no-repeat scroll 95% center !important;
+	background-repeat: no-repeat;
+	background-position:12px;
+	margin-top: 10px;
+	padding-left: 20px;
+	width:100;
+	font-size:14px;
+	/* font-family:"Helvetica Neue"; */
+	float:right;
+	
+}
+
+	.cardtypelogo-amex {
+	
+	background: #FFF url("../img/4.png") no-repeat scroll 95% center !important;
+	background-repeat: no-repeat;
+	background-position:12px;
+	margin-top: 10px;
+	padding-left: 20px;
+	width:100;
+	font-size:16px;
+	/* font-family:"Helvetica Neue"; */
+	float:right;
+	
+}
+
+.no-padding{
+	padding:0 !important;
+	}
+.padding-bottom{
+	padding-bottom:12px!important;
+	}
+.blue-box{
+	background:#cdebf5;
+	color:#1a858f;
+	border-radius:50px;
+	padding:10px;
+	font-size:13px;
+	margin:2px 0;
+	font-size:12px;
+	}
+.blue-box i{
+	width:100%;
+	float:left;	
+	}
+.blue-box p{
+	padding:10px 0 0 0;
+	font-size:14px;
+	margin:0!important;
+	}
+.blue-close{
+	width:30px;
+	height:30px;
+	margin-top:5px;
+	border-radius:50px;
+	background:#000;
+	}
+
+.pp ul li {
+    background: url("../img/arrow.png") 0 5px no-repeat;
+    padding: 0 0 0 20px;
+    margin: 8px 0 0 0;
+	list-style:none;
+	font-size:14px;
+	color:#4A4949;
+	
+}
+
+.pp ol li {
+    padding:0px 0px 0px 6px;
+    margin: 8px 0 0 0;
+	list-style-type:none;
+	font-size:14px;
+	color:#4A4949;
+	
+}
+	
+@media (max-width: 320px){
+.cardtypelogo-all-logos { background-size: 115px !important}
+}
+
+.remove{ font-size:18px; color:#404040;}
+.use_text { font-size:22px; color:#454545; padding-left:30px;}

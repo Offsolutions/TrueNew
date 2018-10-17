@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<title>True Herb India</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Project">
+    <meta name="keywords" content="Project Name">
+    <meta name="author" content="HarV">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- END META -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <%--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places"></script>--%>
+
+    <!-- BEGIN STYLESHEETS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+
+    <!-- END STYLESHEETS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/parsley.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+	
+	</asp:ContentPlaceHolder>
+	
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.hamburger-menu').click(function () {
+            $('.mobile-header').css({
+                position: "fixed",
+                top: 0,
+                width: "100%",
+                height: "100%",
+                zIndex: 999999,
+                backgroundColor: "#fff"
+            }).slideDown();
+            $('body').css('overflow', 'hidden');
+            $('.hide-sidebar').click(function () {
+                $('.mobile-header').slideUp();
+                $('body').css('overflow', 'auto');
+            });
+        });
+
+    });
+</script>
+</form>
+</body>
+</html>
