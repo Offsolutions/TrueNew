@@ -93,7 +93,8 @@ public partial class Default2 : System.Web.UI.Page
                                 Int64 pass = r.Next(100000,999999);
                                 {
                                     SqlCommand cmd3 = new SqlCommand();
-                                    cmd3.CommandText = "insert into member_creation values(@id,@pin,@name,@father,@dob,@address,@email,@mobile,@pass,@dateentry,@spon,@BANK,@IFSC,@BANKAC,@pan,'','','',@upleg,@side,'','','','')";
+                                    //cmd3.CommandText = "insert into member_creation values(@id,@pin,@name,@father,@dob,@address,@email,@mobile,@pass,@dateentry,@spon,@BANK,@IFSC,@BANKAC,@pan,'@NOMINEE','@RELATION',@upleg,@side)";
+                                    cmd3.CommandText = "insert into member_creation values(@id,@pin,@name,@father,@dob,@address,@email,@mobile,@pass,@dateentry,@spon,@BANKNAME,@IFSC,@ACNO,@pan,@accountholder,'@NOMINEE','@RELATION',@upleg,@side,@UDIOCARD,@UDIOMOBILE,@BTCADDRESS,@AADHAR,@UPGRADE)";
                                     cmd3.Connection = con;
                                     cmd3.Parameters.Add("@id", SqlDbType.VarChar).Value = Convert.ToString(id);
                                     cmd3.Parameters.Add("@pin", SqlDbType.VarChar).Value = Convert.ToString(TextBox1.Text).ToUpper();
@@ -101,20 +102,26 @@ public partial class Default2 : System.Web.UI.Page
                                     cmd3.Parameters.Add("@father", SqlDbType.VarChar).Value = Convert.ToString("");
                                     cmd3.Parameters.Add("@dob", SqlDbType.DateTime).Value = Convert.ToDateTime("5/5/2000");
                                     cmd3.Parameters.Add("@address", SqlDbType.VarChar).Value = Convert.ToString("");
-                                    cmd3.Parameters.Add("@mobile", SqlDbType.VarChar).Value = Convert.ToString(TextBox4.Text.ToUpper());
                                     cmd3.Parameters.Add("@email", SqlDbType.VarChar).Value = Convert.ToString("");
+                                    cmd3.Parameters.Add("@mobile", SqlDbType.VarChar).Value = Convert.ToString(TextBox4.Text.ToUpper());
                                     cmd3.Parameters.Add("@pass", SqlDbType.VarChar).Value = Convert.ToString(pass);
+                                    cmd3.Parameters.Add("@dateentry", SqlDbType.DateTime).Value = Convert.ToDateTime(DateTime.Now.AddHours(12).AddMinutes(30));
                                     cmd3.Parameters.Add("@spon", SqlDbType.VarChar).Value = Convert.ToString(TextBox2.Text.ToUpper());
-                                    cmd3.Parameters.Add("@pan", SqlDbType.VarChar).Value = Convert.ToString("");
-                                    cmd3.Parameters.Add("@BANKAC", SqlDbType.VarChar).Value = Convert.ToString("");
-                                    cmd3.Parameters.Add("@BANK", SqlDbType.VarChar).Value = Convert.ToString("");
-                                    cmd3.Parameters.Add("@BRANCH", SqlDbType.VarChar).Value = Convert.ToString("");
+                                    cmd3.Parameters.Add("@BANKNAME", SqlDbType.VarChar).Value = Convert.ToString("");
                                     cmd3.Parameters.Add("@IFSC", SqlDbType.VarChar).Value = Convert.ToString("");
+                                    cmd3.Parameters.Add("@ACNO", SqlDbType.VarChar).Value = Convert.ToString("");
+                                    cmd3.Parameters.Add("@pan", SqlDbType.VarChar).Value = Convert.ToString("");
+                                    cmd3.Parameters.Add("@accountholder", SqlDbType.VarChar).Value = Convert.ToString("");
                                     cmd3.Parameters.Add("@NOMINEE", SqlDbType.VarChar).Value = Convert.ToString("");
                                     cmd3.Parameters.Add("@RELATION", SqlDbType.VarChar).Value = Convert.ToString("");
-                                    cmd3.Parameters.Add("@dateentry", SqlDbType.DateTime).Value = Convert.ToDateTime(DateTime.Now.AddHours(12).AddMinutes(30));
                                     cmd3.Parameters.Add("@upleg", SqlDbType.VarChar).Value = Convert.ToString(upleg);
                                     cmd3.Parameters.Add("@side", SqlDbType.VarChar).Value = Convert.ToString(side);
+
+                                    cmd3.Parameters.Add("@UDIOCARD", SqlDbType.VarChar).Value = Convert.ToString("");
+                                    cmd3.Parameters.Add("@UDIOMOBILE", SqlDbType.VarChar).Value = Convert.ToString("");
+                                    cmd3.Parameters.Add("@BTCADDRESS", SqlDbType.VarChar).Value = Convert.ToString("");
+                                    cmd3.Parameters.Add("@AADHAR", SqlDbType.VarChar).Value = Convert.ToString("");
+                                    cmd3.Parameters.Add("@UPGRADE", SqlDbType.VarChar).Value = "y";
                                     cmd3.ExecuteNonQuery();
                                 }
                                 {

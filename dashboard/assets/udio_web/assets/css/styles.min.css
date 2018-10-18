@@ -5297,7 +5297,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .navbar-brand {
 	float: left;
-	padding: 20.5px 15px;
+	padding: 20.5px 61px;
 	line-height: 23px;
 	height: 64px
 }
@@ -8311,8 +8311,8 @@ transform:translate(0, 100%)
 	line-height: 40px
 }
 .card .card-header {
-	padding:5px;
-	background-color: #ef4123;
+	padding:8px;
+	/*background-color: #ef4123;*/
 }
 .card .card-header2 {
 	padding:0px;
