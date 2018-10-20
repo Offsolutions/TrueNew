@@ -48,9 +48,9 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a href="pwdchg.aspx" class="dropdown-item"><i class="fa fa-link"></i><span>Change Password</span></a>
-                        <div class="dropdown-divider">  </div>
-                            <a href="../admin.aspx" class="dropdown-item">Log out</a>
-                      
+                        <div class="dropdown-divider"></div>
+                        <a href="../admin.aspx" class="dropdown-item">Log out</a>
+
                     </div>
                 </li>
             </ul>
@@ -89,9 +89,10 @@
                 <li class="nav-item"><a href="binary.aspx" class="nav-link"><i class="fa fa-files-o"></i>&nbsp;Binary</a> </li>
                 <li class="nav-item"><a href="transpin.aspx" class="nav-link"><i class="md md-credit-card"></i>&nbsp;<span>Pin Transfer</span></a></li>
                 <li class="nav-item"><a href="returnpin.aspx" class="nav-link"><i class="md md-account-balance-wallet"></i>&nbsp;<span>Pin Return</span></a></li>
-            <%--    <li class="nav-item"><a href="pwdchg.aspx" class="nav-link"><i class="fa fa-link"></i>&nbsp;<span>Change Password</span></a></li>--%>
-                <%-- <li class="nav-item"><a href="../admin.aspx" class="nav-link"><i class="md md-exit-to-app"></i>&nbsp;<span>Log out</span></a></li>--%>
-
+                <li class="nav-item"><a href="products.aspx" class="nav-link"><i class="fa fa-link"></i>&nbsp;<span>Products</span></a></li>
+                <li class="nav-item"><a href="DD.aspx" class="nav-link"><i class="fa fa-files-o"></i>&nbsp;<span>DD</span></a></li>
+                <li class="nav-item"><a href="Branch.aspx" class="nav-link"><i class="fa fa-files"></i>&nbsp;<span>Branch</span></a></li>
+                <li class="nav-item"><a href="Transfer.aspx" class="nav-link"><i class="fa fa-files"></i>&nbsp;<span>Transfer</span></a></li>
                 <%--        <li class="nav-item">
           <a class="nav-link" href="charts.html">
             <i class="fas fa-fw fa-chart-area"></i>
