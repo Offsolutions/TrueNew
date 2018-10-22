@@ -12,10 +12,10 @@ using System.Web.UI.WebControls;
 
 public partial class Default2 : System.Web.UI.Page
 {
-    string constring = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+    string constring = ConfigurationManager.ConnectionStrings["cn"].ConnectionString;
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        DateTime ddtime = Convert.ToDateTime(DateTime.Now.AddHours(12).AddMinutes(30));
     }
 
     protected void Button1_Click(object sender, EventArgs e)
