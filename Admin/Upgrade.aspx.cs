@@ -17,7 +17,7 @@ public partial class Admin_Upgrade : System.Web.UI.Page
             SqlConnection con = new SqlConnection();
             con.ConnectionString = ConfigurationManager.ConnectionStrings["cn"].ConnectionString;
             con.Open();
-            SqlDataAdapter sd = new SqlDataAdapter("select ROW_NUMBER () over (order by m.date_entry) as 'Sr. No.',m.Id,m.NAME,m.MOBILE,m.spon as SPONSER,m.PASS As PASSWORD,convert(varchar,m.DATE_ENTRY,6) as DOJ,(select bal from bal(m.id)) as BAL,(select isnull(sum(amount),0) from wallet where stat='V' and id=m.id) as TOPUP from member_creation m order by m.date_entry", con);
+            SqlDataAdapter sd = new SqlDataAdapter("select ROW_NUMBER () over (order by m.date_entry) as 'Sr. No.',m.Id,m.NAME,m.MOBILE,m.spon as SPONSER,m.PASS As PASSWORD,convert(varchar,m.DATE_ENTRY,6) as DOJ,(select bal from bal(m.id)) as BAL,(select isnull(sum(amount),0) from wallet where stat='V' and id=m.id) as TOPUP from member_creation m where m.upgrade='n' order by m.date_entry", con);
             DataSet ds = new DataSet();
             sd.Fill(ds);
             if (ds != null)

@@ -90,7 +90,7 @@
                     .aspx" class="nav-link"><i class="fa fa-files-o"></i>&nbsp;Binary</a> </li>
                 <li class="nav-item"><a href="transpin.aspx" class="nav-link"><i class="md md-credit-card"></i>&nbsp;<span>Pin Transfer</span></a></li>
                 <li class="nav-item"><a href="returnpin.aspx" class="nav-link"><i class="md md-account-balance-wallet"></i>&nbsp;<span>Pin Return</span></a></li>
-            <%--    <li class="nav-item"><a href="pwdchg.aspx" class="nav-link"><i class="fa fa-link"></i>&nbsp;<span>Change Password</span></a></li>--%>
+                <li class="nav-item"><a href="Upgrade.aspx" class="nav-link"><i class="fa fa-link"></i>&nbsp;<span>Upgrade</span></a></li>
                 <%-- <li class="nav-item"><a href="../admin.aspx" class="nav-link"><i class="md md-exit-to-app"></i>&nbsp;<span>Log out</span></a></li>--%>
 
                 <%--        <li class="nav-item">

@@ -3,215 +3,347 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
+
+<!-- Mirrored from themes.potenzaglobalsolutions.com/html/seohub-seo-marketing-social-media-multipurpose-html5-template/error-404.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Feb 2018 05:55:46 GMT -->
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="YoursNeed" />
+    <meta name="author" content="potenzaglobalsolutions.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>True Herb India</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
 
-    <!-- Bootstrap core CSS-->
-    <link href="../Admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <!-- mega menu -->
+    <link rel="stylesheet" type="text/css" href="../css/mega-menu/mega_menu.css" />
 
-    <!-- Custom fonts for this template-->
-    <link href="../Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
 
-    <!-- Page level plugin CSS-->
-    <link href="../Admin/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <!-- Themify icons -->
+    <link rel="stylesheet" type="text/css" href="../css/themify-icons.css" />
 
-    <!-- Custom styles for this template-->
-    <link href="../Admin/css/sb-admin.css" rel="stylesheet">
-    <link href="../dashboard/assets/udio_web/assets/css/vendors.min.css" rel="stylesheet" />
-    <link href="../dashboard/assets/udio_web/assets/css/styles.min.css" rel="stylesheet" />
-    <link href="../dashboard/assets/udio_web/assets/css/styles.css" rel="stylesheet" />
-    <link href="../dashboard/assets/udio_web/assets/css/jquery_ui.css" rel="stylesheet" />
+    <!-- main style -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <!-- Responsive style -->
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+
+    <!-- Style customizer -->
+    <link rel="stylesheet" href="#" data-style="styles">
+    <link rel="stylesheet" type="text/css" href="../css/style-customizer.css" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
 </head>
 
-<body id="page-top">
+<body runat="server">
     <form runat="server">
-        <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-
-            <a class="navbar-brand mr-1" href="index.html">Welcome</a>
-
-            <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <!-- Navbar -->
-
-            <ul class="navbar-nav ml-auto ml-md-6">
-
-                <li class="nav-item dropdown no-arrow">
-                    <%----%>
-                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-user-circle fa-fw"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a href="pwdchg.aspx" class="dropdown-item"><i class="fa fa-link"></i><span>Change Password</span></a>
-                        <div class="dropdown-divider">  </div>
-                            <a href="../admin.aspx" class="dropdown-item">Log out</a>
-                      
-                    </div>
-                </li>
-            </ul>
-
-        </nav>
-
-        <div id="wrapper">
-
-            <!-- Sidebar -->
-            <ul class="sidebar navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">
-                        <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span><asp:Label ID="Label2" runat="server"></asp:Label>
-		     &nbsp;&nbsp;&nbsp; ID : <asp:Label ID="Label1" runat="server"></asp:Label></span>
-                    </a>
-                </li>
-                 <li class="nav-item"> <a href="default.aspx" class="nav-link"><i class="md md-home"></i>&nbsp;Home</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>My Profile</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                        <a href="profile.aspx" class="dropdown-item"><i class="fa fa-user"></i>&nbsp;Personal Profile</a>
-
-                        <a href="profile1.aspx" class="dropdown-item"><i class="fa fa-credit-card"></i>&nbsp;Payment Profile</a>
-                        <a href="pwdchg.aspx" class="dropdown-item"><i class="fa fa-link"></i>&nbsp;<span>Change Password</span></a>
-
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Genealogy</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="pagesDropdown2">
-                        <a href="direct.aspx" class="dropdown-item"><i class="fa fa-user-plus"></i>&nbsp;Direct Team</a> 
-
-                        <a href="downline.aspx" class="dropdown-item"><i class="fa fa-users"></i>&nbsp;Downline</a>
-                        <a href="tree.aspx" class="dropdown-item"><i class="fa fa-sitemap"></i>&nbsp;<span>Tree</span></a>
-
-                    </div>
-                </li>
-               
-                <li class="nav-item"><a href="pins.aspx" class="nav-link"><i class="md md-home"></i>&nbsp;Pins</a></li>
-                <li class="nav-item"><a href="report.aspx" class="nav-link"><i class="fa fa-files-o"></i>&nbsp;Full Report</a> </li>
-                <li class="nav-item"><a href="binaryreport.aspx" class="nav-link"><i class="fa fa-money"></i>&nbsp;<span>Binary Report</span></a></li>
-              
-            <%--    <li class="nav-item"><a href="pwdchg.aspx" class="nav-link"><i class="fa fa-link"></i>&nbsp;<span>Change Password</span></a></li>--%>
-                <%-- <li class="nav-item"><a href="../admin.aspx" class="nav-link"><i class="md md-exit-to-app"></i>&nbsp;<span>Log out</span></a></li>--%>
-
-                <%--        <li class="nav-item">
-          <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
-        </li>--%>
-            </ul>
-
-            <div id="content-wrapper">
-
-                <div class="container-fluid">
-
-                    <!-- Breadcrumbs-->
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                            </asp:ContentPlaceHolder>
-                            <%-- <a href="#">Dashboard</a>--%>
-                        </li>
-                        <%--  <li class="breadcrumb-item active">Overview</li>--%>
-                    </ol>
-
-                    <!-- Icon Cards-->
+        <!--=================================
+      loading -->
 
 
-                    <!-- Area Chart Example-->
 
+        <!--=================================
+      loading -->
 
-                    <!-- DataTables Example -->
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            <%--                <i class="fas fa-table"></i>--%>
+        <!--=================================
+        header -->
+        <header id="header" class="default">
+            <div class="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="topbar-left text-left">
+                                <ul class="list-inline">
+                                    <li><i class="ti-location-pin"></i>Near Convent School, Gate No. 4, Malout</li>
+                                    <li><i class="ti-headphone-alt"></i>+91 99889-21424</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                            </asp:ContentPlaceHolder>
-                        </div>
-                        <div class="card-footer small text-muted"></div>
-                    </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="topbar-right text-right">
+                                <ul class="list-inline">
 
+                                    <li>Welcome&nbsp;
+            <asp:Label ID="Label2" runat="server"></asp:Label>
+                &nbsp;&nbsp;&nbsp; ID :
+            <asp:Label ID="Label1" runat="server"></asp:Label></li>
+                                    <li style="display:none">
+                                        <asp:LinkButton ID="lnklogin" runat="server">Login</asp:LinkButton>
+                                        <asp:LinkButton ID="lnklogout" runat="server" Visible="false">Logout</asp:LinkButton>
+
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- /.container-fluid -->
+            </div>
 
-                <!-- Sticky Footer -->
-                <footer class="sticky-footer">
-                    <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                            <span>Copyright © Your Website 2018</span>
+            <!--=================================
+    mega menu -->
+
+            <div class="menu">
+                <!-- menu start -->
+                <nav id="menu" class="mega-menu">
+                    <!-- menu list items container -->
+                    <section class="menu-list-items">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <!-- menu logo -->
+                                    <ul class="menu-logo">
+                                        <li>
+                                            <a href="Default.aspx">
+                                                <img id="logo_img" src="../images/true.png" alt="logo">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- menu links -->
+                                    <ul class="menu-links">
+
+                                        <li><a href="Default.aspx">Home </a>
+                                            <!-- drop down multilevel  -->
+
+                                        </li>
+
+                                        <li><a href="javascript:void(0)">My Profile <i class="fa fa-angle-down fa-indicator"></i></a>
+                                            <!-- drop down multilevel  -->
+                                            <ul class="drop-down-multilevel">
+                                                <li><a href="profile.aspx">Personal Profile</a> </li>
+                                                <li><a href="profile1.aspx">Payment Profile</a> </li>
+                                                <li><a href="pwdchg.aspx">Change Password</a></li>
+
+
+                                            </ul>
+                                        </li>
+                                         <li><a href="javascript:void(0)">Genealogy<i class="fa fa-angle-down fa-indicator"></i></a>
+                                            <!-- drop down multilevel  -->
+                                            <ul class="drop-down-multilevel">
+                                                <li><a href="direct.aspx" >Direct Team</a> </li>
+                                                <li><a href="downline.aspx">Downline</a> </li>
+                                                <li><a href="tree.aspx">Tree</a></li>
+
+
+                                            </ul>
+                                        </li>
+                                        <!-- active class -->
+                                        <li class="active"><a href="Pins.aspx">Pins </a></li>
+                                         <li><a href="javascript:void(0)">Report<i class="fa fa-angle-down fa-indicator"></i></a>
+                                            <!-- drop down multilevel  -->
+                                            <ul class="drop-down-multilevel">
+                                                <li><a href="report.aspx">Full Report</a> </li>
+                                                <li><a href="binaryreport.aspx" ">Binary Report</a></li>
+
+
+                                            </ul>
+                                        </li>
+                                        <li><a href="../login.aspx">Logout </a></li>
+                                      
+                                        <li>
+                                 <%--           <asp:LinkButton ID="LinkButton1" OnClick="lnklogin_Click" runat="server">Login</asp:LinkButton>
+                                            <asp:LinkButton ID="LinkButton2" OnClick="lnklogout_Click" runat="server" Visible="false">Logout</asp:LinkButton>--%>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </nav>
+                <!-- menu end -->
+            </div>
+        </header>
+        <!--=================================
+search and side menu content -->
+        <div class="search-overlay"></div>
+        <div class="menu-overlay"></div>
+        <div id="search" class="search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <input type="search" placeholder="Type and hit enter...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-content" id="scrollbar">
+            <div class="side-content-info">
+                <div class="menu-toggle-hamburger menu-close"><span class="ti-close"></span></div>
+                <div class="side-logo">
+                    <img class="img-responsive mb-30" src="images/logo-dark.png" alt="">
+                    <p>Culpa molestias mollitia natus labore perspiciatis ipsa lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aut explicabo mollitia, sed, eos, magni quos laborum dolores ab distinctio voluptates quae ipsam.</p>
+                    <hr class="mt-20 mb-30" />
+                </div>
+                <div class="contact-address">
+                    <div class="address-title mb-30">
+                        <h4 class="mb-15">Office 01</h4>
+                        <p>mollitia omnis fuga, nihil suscipit lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit quos.</p>
+                    </div>
+                    <div class="contact-box mb-20">
+                        <div class="contact-icon">
+                            <i class="ti-direction-alt text-blue"></i>
+                        </div>
+                        <div class="contact-info">
+                            <div class="text-left">
+                                <h6>25, King St. 20170</h6>
+                                <span>Melbourne Australia</span>
+                            </div>
                         </div>
                     </div>
-                </footer>
-
+                    <div class="contact-box mb-20">
+                        <div class="contact-icon">
+                            <i class="ti-headphone-alt text-blue"></i>
+                        </div>
+                        <div class="contact-info">
+                            <div class="text-left">
+                                <h6>0011 234 56789</h6>
+                                <span>Mon-Fri 8:30am-6:30pm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-box mb-20">
+                        <div class="contact-icon">
+                            <i class="ti-email text-blue"></i>
+                        </div>
+                        <div class="contact-info">
+                            <div class="text-left">
+                                <h6>info@yoursite.com</h6>
+                                <span>24 X 7 online support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- /.content-wrapper -->
-
+            <div class="side-content-image">
+                <img class="img-responsive center-block" src="images/bg-element/04.png" alt="">
+            </div>
         </div>
-        <!-- /#wrapper -->
+        <!--=================================
+search and side menu content -->
+        <!--=================================
+header -->
+        <!--=================================
+intro-title -->
+        <section class="intro-title black-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 text-left">
+                        <div class="intro-content">
+                            <div class="intro-name">
+                                <%--<h3 class="text-white">Error 404</h3>
+                            <ul class="breadcrumb mt-10">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item text-white">Pages</li>
+                                <li class="breadcrumb-item active">Error 404</li>
+                            </ul>--%>
+                            </div>
+                            <div class="intro-img">
+                                <img class="img-responsive" src="images/breadcrumb/02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=================================
+intro-title -->
+        <!--=================================
+page-section -->
+        <section class="page-section-ptb">
+            <div class="container">
+                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </section>
+        <!--=================================
+page-section -->
+        <!--=================================
+footer -->
+        <footer class="footer footer-topbar page-section-pt">
 
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
+            <div class="copyright mt-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <ul class="list-inline text-left">
+                                <li>Powered By: <a href="http://www.officialsolutions.in">Official Solutions </a>&nbsp;&nbsp;&nbsp;|</li>
 
-        <!-- Logout Modal-->
-        <%--<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="text-right">
+                                <p>Copyright © 2018 True Herb India. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--=================================
+footer -->
+        <!--=================================
+ color customizer -->
 
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
+        <div class="style-customizer closed">
+            <div class="buy-button"><a class="opener" href="#"><i class="fa fa-cog fa-spin"></i></a></div>
+            <div class="clearfix content-chooser">
+                <a target="_blank" class="button" href="https://themeforest.net/item/car-dealer-the-best-car-dealer-automotive-responsive-html5-template/19226545?ref=Potenzaglobalsolutions">purchase now</a>
+                <h3>Color Schemes</h3>
+                <p>Which theme color you want to use? Here are some predefined colors.</p>
+                <ul class="styleChange clearfix">
+                    <li class="skin-default selected" title="Default" data-style="skin-default"></li>
+                    <li class="skin-blue" title="Blue" data-style="skin-blue"></li>
+                    <li class="skin-orange" title="Orange" data-style="skin-orange"></li>
+                    <li class="skin-purple" title="purple" data-style="skin-purple"></li>
+                    <li class="skin-gold" title="gold" data-style="skin-gold"></li>
+                    <li class="skin-green" title="green" data-style="skin-green"></li>
+                    <li class="skin-red" title="red" data-style="skin-red"></li>
+                    <li class="skin-yellow" title="Yellow" data-style="skin-yellow"></li>
+                </ul>
+                <ul class="resetAll">
+                    <li><a class="button button-reset" href="#">Reset All</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>--%>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="../Admin/vendor/jquery/jquery.min.js"></script>
-        <script src="../Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--=================================
+ color customizer -->
 
-        <!-- Core plugin JavaScript-->
-        <script src="../Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Page level plugin JavaScript-->
-        <script src="../Admin/vendor/chart.js/Chart.min.js"></script>
-        <script src="../Admin/vendor/datatables/jquery.dataTables.js"></script>
-        <script src="../Admin/vendor/datatables/dataTables.bootstrap4.js"></script>
+        <!--=================================
+back to top -->
+        <div class="back-to-top">
+            <span>
+                <img src="images/rocket.png" data-src="images/rocket.png" data-hover="images/rocket.gif" alt=""></span>
+        </div>
+        <!--=================================
+back to top -->
+        <!-- jquery  -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
 
-        <!-- Custom scripts for all pages-->
-        <script src="../Admin/js/sb-admin.min.js"></script>
+        <!-- bootstrap -->
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
-        <!-- Demo scripts for this page-->
-        <script src="../Admin/js/demo/datatables-demo.js"></script>
-        <script src="../Admin/js/demo/chart-area-demo.js"></script>
+        <!-- mega-menu -->
+        <script type="text/javascript" src="../js/mega-menu/mega_menu.js"></script>
+
+        <!-- style customizer  -->
+        <%-- <script type="text/javascript" src="js/style-customizer.js"></script>--%>
+
+        <!-- custom -->
+        <script type="text/javascript" src="../js/custom.js"></script>
+
     </form>
 </body>
+
+
 </html>

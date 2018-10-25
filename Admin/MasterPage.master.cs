@@ -8,10 +8,10 @@ public partial class Admin_MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        //if (Session["adm"] == null)
-        //{
-        //    Response.Redirect("~/admin.aspx");
-        //}
+        if (Session["adm"] == null)
+        {
+            Response.Redirect("~/admin.aspx");
+        }
 
     }
 }
