@@ -116,7 +116,6 @@ public partial class Default2 : System.Web.UI.Page
                                     cmd3.Parameters.Add("@RELATION", SqlDbType.VarChar).Value = Convert.ToString("");
                                     cmd3.Parameters.Add("@upleg", SqlDbType.VarChar).Value = Convert.ToString(upleg);
                                     cmd3.Parameters.Add("@side", SqlDbType.VarChar).Value = Convert.ToString(side);
-
                                     cmd3.Parameters.Add("@UDIOCARD", SqlDbType.VarChar).Value = Convert.ToString("");
                                     cmd3.Parameters.Add("@UDIOMOBILE", SqlDbType.VarChar).Value = Convert.ToString("");
                                     cmd3.Parameters.Add("@BTCADDRESS", SqlDbType.VarChar).Value = Convert.ToString("");
