@@ -234,6 +234,23 @@ public class Common
     #endregion
 
     #region Generate Class code
+    public static string GenProductCode()
+    {
+        SQLHelper objsql = new SQLHelper();
+        string max = Common.Get(objsql.GetSingleValue("select max(code) from tblproducts"));
+        if (max == "")
+        {
+            return "P10001";
+        }
+        else
+        {
+            string[] pc = max.Split('P');
+            int cod = Convert.ToInt32(pc[1]) + Convert.ToInt32(1);
+
+            return "P" + cod;
+        }
+        //return 0; (Convert.ToInt32(max) + Convert.ToInt32(1)).ToString();
+    }
     public string GenerateClassCode(int length)
     {
         StringBuilder classCode = new StringBuilder();

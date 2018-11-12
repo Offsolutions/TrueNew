@@ -10,7 +10,7 @@ public partial class Admin_MasterPage : System.Web.UI.MasterPage
     {
         if (Session["adm"] == null)
         {
-            Response.Redirect("~/admin.aspx");
+           // Response.Redirect("~/admin.aspx");
         }
 
     }

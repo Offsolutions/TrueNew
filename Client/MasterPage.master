@@ -110,10 +110,7 @@
                                     <!-- menu links -->
                                     <ul class="menu-links">
 
-                                        <li><a href="Default.aspx">Home </a>
-                                            <!-- drop down multilevel  -->
-
-                                        </li>
+                                        <li><a href="Default.aspx">Home </a></li>
 
                                         <li><a href="javascript:void(0)">My Profile <i class="fa fa-angle-down fa-indicator"></i></a>
                                             <!-- drop down multilevel  -->
@@ -144,6 +141,22 @@
                                                 <li><a href="binaryreport.aspx" ">Binary Report</a></li>
 
 
+                                            </ul>
+                                        </li>
+                                        <li><a href="javascript:void(0)">Wallets <i class="fa fa-angle-down fa-indicator"></i></a>
+                                            <!-- drop down multilevel  -->
+                                            <ul class="drop-down-multilevel">
+                                               
+                                                <li><a href="Rewards.aspx">Reward Wallet</a></li>
+                                                <li><a href="RewardLevel.aspx">Reward Level</a></li>
+
+                                            </ul>
+                                        </li>
+                                          <li id="pnlstock" runat="server" visible="false"><a href="javascript:void(0)">Products <i class="fa fa-angle-down fa-indicator"></i></a>
+                                            <ul class="drop-down-multilevel">
+                                                 <li><a href="Stock.aspx">Stock</a></li>
+                                                <li><a href="Saleproduct.aspx">Sale</a></li>
+                                                 <li><a href="salehistory.aspx">Sale History</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="../login.aspx">Logout </a></li>

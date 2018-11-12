@@ -28,6 +28,17 @@ public partial class Admin_Default2 : System.Web.UI.Page
     {
         string Sr = Convert.ToString(GridView1.DataKeys[e.RowIndex].Value);
         Session["id"] = Sr;
+        Session["user"] = Sr;
         Response.Redirect("~/client/");
+    }
+
+
+
+
+
+    protected void LinkButton2_Click(object sender, EventArgs e)
+    {
+        string id = (sender as LinkButton).CommandArgument;
+        Response.Redirect("profile.aspx?id=" + id);
     }
 }

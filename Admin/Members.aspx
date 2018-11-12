@@ -15,6 +15,12 @@
                         <asp:LinkButton ID="LinkButton1" runat="server" CommandName="Update">Click</asp:LinkButton>
                     </ItemTemplate>
                 </asp:TemplateField>
+                <asp:TemplateField>
+                    <ItemTemplate>
+                       
+                        <asp:LinkButton ID="LinkButton2" OnClick="LinkButton2_Click" CommandArgument='<%#Eval("id") %>' runat="server">Profile</asp:LinkButton>
+                    </ItemTemplate>
+                </asp:TemplateField>
             </Columns>
             <SelectedRowStyle
                 BorderStyle="Dotted" BorderWidth="1px" />

@@ -61,6 +61,7 @@ public partial class Login : System.Web.UI.Page
                 else
                 {
                     Session["id"] = Convert.ToString(txtuser.Text.ToUpper());
+                    Session["user"] = Convert.ToString(txtuser.Text.ToUpper());
                     {
                         SqlCommand cmd1 = new SqlCommand();
                         cmd1.CommandText = "select mobile from member_creation where id=@ID";

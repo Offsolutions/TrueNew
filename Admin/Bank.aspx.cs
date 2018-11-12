@@ -71,7 +71,8 @@ public partial class Admin_Default2 : System.Web.UI.Page
             cmd451.Connection = con;
             string mobile = Convert.ToString(cmd451.ExecuteScalar());
             string msg = "Dear " + Convert.ToString(cmd45.ExecuteScalar()) + ". Rs." + Convert.ToString(TextBox2.Text)  + "/- has been transferred in your Bank Account. For More Detail visit www.AirwaysAdvertisers.biz.";
-            string result = apicall("http://login.smsmedia.org/api/mt/SendSMS?user=jaykaysoftwares@yahoo.com&password=pintu&senderid=Airway&channel=Trans&DCS=0&flashsms=0&number=91" + mobile + "&text=" + msg + "&route=1");
+            //  string result = apicall("http://login.smsmedia.org/api/mt/SendSMS?user=jaykaysoftwares@yahoo.com&password=pintu&senderid=Airway&channel=Trans&DCS=0&flashsms=0&number=91" + mobile + "&text=" + msg + "&route=1");
+            apicall("http://sms.officialsms.in/sendSMS?username=TrueHerb&message="+msg+"&sendername=TUHERB&smstype=TRANS&numbers=" + mobile + "&apikey=ee04a007-060f-4504-b132-752d08fdfcf2");
             Response.Redirect("bank.aspx");
         }
         con.Dispose();
@@ -82,4 +83,6 @@ public partial class Admin_Default2 : System.Web.UI.Page
         Session["id"] = Sr;
         Response.Redirect("~/Client");
     }
+
+   
 }

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
+<head runat="server">
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +30,7 @@
 
 <body id="page-top">
     <form runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
             <a class="navbar-brand mr-1" href="index.html">Welcome</a>
@@ -86,11 +87,48 @@
                 <li class="nav-item"><a href="default.aspx" class="nav-link"><i class="md md-home"></i>&nbsp;Home</a> </li>
                 <li class="nav-item"><a href="members.aspx" class="nav-link"><i class="fa fa-users"></i>&nbsp;Members</a> </li>
                 <li class="nav-item"><a href="bank.aspx" class="nav-link"><i class="fa fa-files-o"></i>&nbsp;Report</a> </li>
+                <li class="nav-item"><a href="Reward-Report.aspx" class="nav-link"><i class="fa fa-files-o"></i>&nbsp;Reward Report</a> </li>
                 <li class="nav-item"><a href="
                     .aspx" class="nav-link"><i class="fa fa-files-o"></i>&nbsp;Binary</a> </li>
                 <li class="nav-item"><a href="transpin.aspx" class="nav-link"><i class="md md-credit-card"></i>&nbsp;<span>Pin Transfer</span></a></li>
                 <li class="nav-item"><a href="returnpin.aspx" class="nav-link"><i class="md md-account-balance-wallet"></i>&nbsp;<span>Pin Return</span></a></li>
-                <li class="nav-item"><a href="Upgrade.aspx" class="nav-link"><i class="fa fa-link"></i>&nbsp;<span>Upgrade</span></a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Products</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                       
+                        <a class="dropdown-item" href="AddProduct.aspx">Add Product</a>
+                        <a class="dropdown-item" href="Product.aspx">Product List</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Manage Assigned Stock</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                       
+                        <a class="dropdown-item" href="AssignStock.aspx">Assign Stock</a>
+                        <a class="dropdown-item" href="ViewAssignedstock.aspx">View Assigned Stock</a>
+                        
+                    </div>
+                </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Reward Details</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                       
+                        <a class="dropdown-item" href="RewardDetails.aspx">Add Reward</a>
+                        <a class="dropdown-item" href="view-rewards.aspx">View Rewards</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item"><a href="Daily-Reward-Income.aspx" class="nav-link"><i class="md md-home"></i>&nbsp;Daily Income</a> </li>
                 <%-- <li class="nav-item"><a href="../admin.aspx" class="nav-link"><i class="md md-exit-to-app"></i>&nbsp;<span>Log out</span></a></li>--%>
 
                 <%--        <li class="nav-item">
