@@ -107,32 +107,32 @@ public partial class Client_SaleProduct : System.Web.UI.Page
 
         }
         cnt = 0;
-        //DataTable dtr = new DataTable();
-        //dtr = objsql.GetTable("select pv,self,side,upleg from usersnew where id='" + txtregno.Text + "'");
-        //string pv = dtr.Rows[0]["pv"].ToString();
-        //string self = dtr.Rows[0]["self"].ToString();
-        //string side = dtr.Rows[0]["side"].ToString();
-        //string upleg = dtr.Rows[0]["upleg"].ToString();
-        //int selftotal = (Convert.ToInt32(self) + Convert.ToInt32(lblpvtotal.Text));
-        //objsql.ExecuteNonQuery("update member_creation set self='" + selftotal.ToString() + "' where id='" + txtregno.Text + "'");
-        //using (SqlConnection con = new SqlConnection(constring))
-        //{
+        DataTable dtr = new DataTable();
+        dtr = objsql.GetTable("select bv,self,side,upleg from member_creation where id='" + txtregno.Text + "'");
+        string pv = dtr.Rows[0]["bv"].ToString();
+        string self = dtr.Rows[0]["self"].ToString();
+        string side = dtr.Rows[0]["side"].ToString();
+        string upleg = dtr.Rows[0]["upleg"].ToString();
+        int selftotal = (Convert.ToInt32(self) + Convert.ToInt32(lblpvtotal.Text));
+        objsql.ExecuteNonQuery("update member_creation set self='" + selftotal.ToString() + "' where id='" + txtregno.Text + "'");
+        using (SqlConnection con = new SqlConnection(constring))
+        {
 
-        //    using (SqlCommand cmd = new SqlCommand("EveryNode", con))
-        //    {
-        //        cmd.CommandType = CommandType.StoredProcedure;
-        //        cmd.Parameters.AddWithValue("@id", txtregno.Text);           // sponser id
-        //        cmd.Parameters.AddWithValue("@node", side);                            // node
-        //        cmd.Parameters.AddWithValue("@checkid", txtregno.Text);
-        //        cmd.Parameters.AddWithValue("@pvp", lblpvtotal.Text);
-        //        cmd.Parameters.Add("@printvalue", SqlDbType.VarChar, 30);
-        //        cmd.Parameters["@printvalue"].Direction = ParameterDirection.Output;
-        //        con.Open();
-        //        cmd.ExecuteNonQuery();
-        //        con.Close();
-        //    }
+            using (SqlCommand cmd = new SqlCommand("EveryNode", con))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", txtregno.Text);           // sponser id
+                cmd.Parameters.AddWithValue("@node", side);                            // node
+                cmd.Parameters.AddWithValue("@checkid", txtregno.Text);
+                cmd.Parameters.AddWithValue("@bvp", lblpvtotal.Text);
+                cmd.Parameters.Add("@printvalue", SqlDbType.VarChar, 30);
+                cmd.Parameters["@printvalue"].Direction = ParameterDirection.Output;
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
 
-        //}
+        }
         Response.Redirect("salehistory.aspx");
 
     }

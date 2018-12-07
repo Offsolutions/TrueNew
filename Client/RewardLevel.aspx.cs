@@ -17,9 +17,13 @@ public partial class Client_RewardLevel : System.Web.UI.Page
     public static int totalpurchase = 0;
     protected void Page_Load(object sender, EventArgs e)
     {
-        reg = Session["id"].ToString();
+        
         if (!IsPostBack)
         {
+            if (Request.QueryString["id"] != null)
+            {
+                reg = Request.QueryString["id"].ToString();
+            }
             bind();
         }
     }

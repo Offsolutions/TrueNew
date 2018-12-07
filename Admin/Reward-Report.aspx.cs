@@ -24,7 +24,7 @@ public partial class Admin_Reward_Report : System.Web.UI.Page
     protected void bind()
     {
         DataTable dt = new DataTable();
-        dt = objsql.GetTable("select m.id,m.name,m.father,m.bankname,acno,ifsc,(select sum(r.rewardincome) from tblrewardincome r where r.regno=m.id) as total,(select sum(paid) from tblpayreward where regno=m.id) as pay,((select sum(rewardincome) from tblrewardincome where regno=m.id) -(select sum(paid) from tblpayreward where regno=m.id) ) as pending from member_creation m , tblrewardincome a where m.id = a.regno order by m.id");
+        dt = objsql.GetTable("select distinct m.id,m.name,m.father,m.bankname,acno,ifsc,(select sum(r.rewardincome) from tblrewardincome r where r.regno=m.id) as total,(select sum(paid) from tblpayreward where regno=m.id) as pay,((select sum(rewardincome) from tblrewardincome where regno=m.id) -(select sum(paid) from tblpayreward where regno=m.id) ) as pending from member_creation m , tblrewardincome a where m.id = a.regno order by m.id");
         if (dt.Rows.Count > 0)
         {
             GridView1.DataSource = dt;
@@ -50,7 +50,7 @@ public partial class Admin_Reward_Report : System.Web.UI.Page
         string mobile = Convert.ToString(cmd451.ExecuteScalar());
         string msg = "Dear " + Convert.ToString(cmd45.ExecuteScalar()) + ". Rs." + Convert.ToString(TextBox2.Text) + "/- has been transferred in your Bank Account. For More Detail visit www.trueherb1313.com.";
         //  string result = apicall("http://login.smsmedia.org/api/mt/SendSMS?user=jaykaysoftwares@yahoo.com&password=pintu&senderid=Airway&channel=Trans&DCS=0&flashsms=0&number=91" + mobile + "&text=" + msg + "&route=1");
-       // apicall("http://sms.officialsms.in/sendSMS?username=TrueHerb&message=" + msg + "&sendername=TUHERB&smstype=TRANS&numbers=" + mobile + "&apikey=ee04a007-060f-4504-b132-752d08fdfcf2");
+        apicall("http://sms.officialsms.in/sendSMS?username=TrueHerb&message=" + msg + "&sendername=TUHERB&smstype=TRANS&numbers=" + mobile + "&apikey=ee04a007-060f-4504-b132-752d08fdfcf2");
         Response.Redirect("reward-report.aspx");
 
     }

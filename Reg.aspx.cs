@@ -94,7 +94,7 @@ public partial class Default2 : System.Web.UI.Page
                                 {
                                     SqlCommand cmd3 = new SqlCommand();
                                     //cmd3.CommandText = "insert into member_creation values(@id,@pin,@name,@father,@dob,@address,@email,@mobile,@pass,@dateentry,@spon,@BANK,@IFSC,@BANKAC,@pan,'@NOMINEE','@RELATION',@upleg,@side)";
-                                    cmd3.CommandText = "insert into member_creation values(@id,@pin,@name,@father,@dob,@address,@email,@mobile,@pass,@dateentry,@spon,@BANKNAME,@IFSC,@ACNO,@pan,@accountholder,'@NOMINEE','@RELATION',@upleg,@side,@UDIOCARD,@UDIOMOBILE,@BTCADDRESS,@AADHAR,@UPGRADE)";
+                                    cmd3.CommandText = "insert into member_creation values(@id,@pin,@name,@father,@dob,@address,@email,@mobile,@pass,@dateentry,@spon,@BANKNAME,@IFSC,@ACNO,@pan,@accountholder,'@NOMINEE','@RELATION',@upleg,@side,@UDIOCARD,@UDIOMOBILE,@BTCADDRESS,@AADHAR,@UPGRADE,@bv,@self)";
                                     cmd3.Connection = con;
                                     cmd3.Parameters.Add("@id", SqlDbType.VarChar).Value = Convert.ToString(id);
                                     cmd3.Parameters.Add("@pin", SqlDbType.VarChar).Value = Convert.ToString(TextBox1.Text).ToUpper();
@@ -121,12 +121,15 @@ public partial class Default2 : System.Web.UI.Page
                                     cmd3.Parameters.Add("@BTCADDRESS", SqlDbType.VarChar).Value = Convert.ToString("");
                                     cmd3.Parameters.Add("@AADHAR", SqlDbType.VarChar).Value = Convert.ToString("");
                                     cmd3.Parameters.Add("@UPGRADE", SqlDbType.VarChar).Value = "y";
+                                    cmd3.Parameters.Add("@bv", SqlDbType.Int).Value = 0;
+                                    cmd3.Parameters.Add("@self", SqlDbType.Int).Value = 0;
                                     cmd3.ExecuteNonQuery();
                                 }
                                 {
                                     string mobile = Convert.ToString(TextBox4.Text);
                                     string msg = "Dear " + Convert.ToString(TextBox3.Text) + ". Welcome to True Herb India. Your ID is (" + Convert.ToString(id) + ") and Password is (" + Convert.ToString(pass) + "). Thanks for Joining Us. For More Detail visit www.TrueHerbIndia.com.";
-                                    string result = apicall("http://www.zewaa.biz/sms.aspx?SENDER=THerbs&MOBILE=" + mobile + "&MSG=" + msg);
+                                    string result = apicall("http://sms.officialsms.in/sendSMS?username=TrueHerb&message=" + msg + "&sendername=TUHERB&smstype=TRANS&numbers=" + mobile + "&apikey=ee04a007-060f-4504-b132-752d08fdfcf2");
+
                                 }
                                 TextBox2.Text = "";
                                 TextBox3.Text = "";

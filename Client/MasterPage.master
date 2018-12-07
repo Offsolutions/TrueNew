@@ -146,9 +146,10 @@
                                         <li><a href="javascript:void(0)">Wallets <i class="fa fa-angle-down fa-indicator"></i></a>
                                             <!-- drop down multilevel  -->
                                             <ul class="drop-down-multilevel">
-                                               
+                                               <li><a href="ewallet.aspx">Pair Wallet</a></li>
                                                 <li><a href="Rewards.aspx">Reward Wallet</a></li>
-                                                <li><a href="RewardLevel.aspx">Reward Level</a></li>
+        
+                                                <li><a href="RewardLevel.aspx?id=<%=Session["id"].ToString()%>">Reward Level</a></li>
 
                                             </ul>
                                         </li>
